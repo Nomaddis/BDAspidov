@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <link href="css/all.css" rel="stylesheet">
     <meta charset="utf-8">
-    <title>mini start template</title>
+    <title>Criminal DB</title>
   </head>
   <body>
     <header>
@@ -32,7 +32,7 @@
         </div>
         <div class="filters">
           <div class="filters__title title">
-            <h2>Виберіть критерії пошуку кримінальної справи:</h2>
+            <!--h2 Виберіть критерії пошуку кримінальної справи:-->
           </div>
           <div class="filters__buttons">
             <div class="filter">
@@ -128,12 +128,61 @@
             </div>
           </div>
         </div>
+        <div class="case-prev">
+          <div class="case-prev__title">
+            <h2>Кримінальні справи</h2>
+          </div>
+          <div class="case-prev__table">
+            <table class="table table-bordered">
+              <thead>
+                <tr class="table-head">
+                  <th>Слідчий</th>
+                  <th>Дата початку</th>
+                  <th>Дата кінця</th>
+                  <th>Кваліфікація</th>
+                  <th>К-ть обвинувачених</th>
+                  <th>К-ть епізодів</th>
+                  <th>Прийняте рішення</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Квітка Нестор Петрович</td>
+                  <td>02.01.2018</td>
+                  <td>11.05.2018</td>
+                  <td>Пограбування</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>Принудити до громадських робіт по прибиранню території окупованої циганським табором, що знаходиться біля супермаркету Метро за адресою вул. Городоцька 210. До виконання рішення приступити негайно.</td>
+                </tr>
+                <tr>
+                  <td>Ільченко Роман Степанович</td>
+                  <td>20.02.2018</td>
+                  <td>30.05.2018</td>
+                  <td>Побутовий дебож</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Петренко Іван Романович</td>
+                  <td>20.02.2018</td>
+                  <td>30.05.2018</td>
+                  <td>Побутовий дебож</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </main>
     <!--include modules/footer-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/bootstrap-select.min.js"></script>
-    <script src="js/babel/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

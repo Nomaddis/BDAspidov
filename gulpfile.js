@@ -7,10 +7,7 @@ var pug = require('gulp-pug'),
     uglify = require('gulp-uglify');
 const autoprefixer = require('gulp-autoprefixer');
 var ghPages = require('gulp-gh-pages');
-gulp.task('deploy', function() {
-    return gulp.src('./web/**/*')
-        .pipe(ghPages());
-});
+
 var config = {
     server: {
         baseDir: "./web"
@@ -59,4 +56,10 @@ gulp.task('babel', () =>
         }))
         .pipe(gulp.dest('web/js/babel'))
 );
+
+gulp.task('deploy', function() {
+    return gulp.src('./web/**/*')
+        .pipe(ghPages());
+});
+
 gulp.task('default', ['browser-sync', 'watch']);
