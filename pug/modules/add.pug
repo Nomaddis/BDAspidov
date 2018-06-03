@@ -1,0 +1,117 @@
+main
+    .container
+        .view_title.title
+            h1 Тут ви можете додати кримінальні справи
+        .add
+            .add__title
+                //h3 Вкажіть параметри кримінальної справи
+            .add__form
+                form
+                    .form-section
+                        .form-section__title
+                            h4 Вкажіть слідчого:
+                        .form-section__content
+                            .form-group
+                                label(for='surname') Прізвище
+                                select.form-control.selectpicker#surname
+                                    option Mayer
+                                    option Billy
+                                    option Stark
+                                    option Cap
+                                    option Tanos
+                                    option Rabbit
+                                    option Pussy
+                            .form-group
+                                label(for='birthdDate') Дата народження
+                                input(id="birthdDate" type="date")
+                            .form-group
+                                label(for='role') Звання
+                                select.form-control.selectpicker#role
+                                    option Старший слідчий
+                                    option Молодший слідчий
+                                    option Заступник начальника управління
+                                    option Начальник Управління
+                    .form-section
+                        .form-section__title
+                            h4 Вкажіть ОВД:
+                        .form-section__content
+                            .form-section__content
+                                .form-group
+                                    label(for='ovd') Прізвище
+                                    select.form-control.selectpicker#ovd
+                                        option Залізничний
+                                        option Франківський
+                                        option Личаківський
+                                        option Сихівський
+                                        option Галицький
+                                        option Шевченківський
+                    .form-section
+                        .form-section__title
+                            h4 Дата
+                        .form-section__content
+                            .form-section__content
+                                .form-group
+                                    label(for='StartDate') Оберіть дату початку слідства
+                                    input(id="StartDate" type="date")
+                                .form-group
+                                    label(for='endDate') ОБеріть дату закінчення слідства
+                                    input(id="endDate" type="date")
+                    .form-section
+                        .form-section__title
+                            h4 Кваліфікація
+                        .form-section__content
+                            .form-section__content
+                                .form-group
+                                    label(for='classification') Звання
+                                    select.form-control.selectpicker#classification
+                                        option Вбивство
+                                        option Крадіжка
+                                        option Розбій
+                                        option Хліганство
+                    .form-section
+                        .form-section__title
+                            h4 Кількість:
+                        .form-section__content
+                            .form-section__content
+                                .form-group
+                                    label(for='qty') Обвинувачених:
+                                    select.form-control.selectpicker#qty
+                                        option 1
+                                        option 2
+                                        option 3
+                                        option 4
+                                        option 5
+                                        option 6
+                                        option 7
+                                        option 8
+                                        option 9
+                                        option 10
+                                .form-group
+                                    label(for='qtyEpizod') Епізодів:
+                                    select.form-control.selectpicker#qtyEpizod
+                                        option 1
+                                        option 2
+                                        option 3
+                                        option 4
+                    .form-section
+                        .form-section__title
+                            h4 Рішення
+                        .form-section__content
+                            .form-section__content
+                                .form-group
+                                    label(for='confirm') Оберіть дату прийняття
+                                    input(id="confirm" type="date")
+                                .form-group
+                                    label(for='face') Особа що прийняла рішення:
+                                    select.form-control.selectpicker#face
+                                        option Залізничний
+                                        option Франківський
+                                        option Личаківський
+                                        option Сихівський
+                                        option Галицький
+                                        option Шевченківський
+                    .form-section__content
+                        .form-group.decision-group
+                            label(for='decision') Прийняте рішення
+                            textarea(id="decision").decision
+                    button(type="submit").btn.btn-default Submit
