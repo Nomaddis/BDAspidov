@@ -6,6 +6,11 @@ var pug = require('gulp-pug'),
     reload = browserSync.reload,
     uglify = require('gulp-uglify');
 const autoprefixer = require('gulp-autoprefixer');
+var ghPages = require('gulp-gh-pages');
+gulp.task('deploy', function() {
+    return gulp.src('./web/**/*')
+        .pipe(ghPages());
+});
 var config = {
     server: {
         baseDir: "./web"
