@@ -1,0 +1,168 @@
+
+<main>
+  <div class="container">
+    <div class="view_title title">
+      <h1>Тут ви можете додати кримінальні справи</h1>
+    </div>
+    <div class="add">
+      <div class="add__title">
+        <!--h3 Вкажіть параметри кримінальної справи-->
+      </div>
+      <div class="add__form">
+        <form>
+          <div class="form-section">
+            <div class="form-section__title">
+              <h4>Вкажіть слідчого:</h4>
+            </div>
+            <div class="form-section__content">
+              <div class="form-group">
+                <label for="surname">Прізвище</label>
+                <select class="form-control selectpicker" id="surname">
+                  <option>Mayer</option>
+                  <option>Billy</option>
+                  <option>Stark</option>
+                  <option>Cap</option>
+                  <option>Tanos</option>
+                  <option>Rabbit</option>
+                  <option>Pussy</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="birthdDate">Дата народження</label>
+                <input id="birthdDate" type="date"/>
+              </div>
+              <div class="form-group">
+                <label for="role">Звання</label>
+                <select class="form-control selectpicker" id="role">
+                  <option>Старший слідчий</option>
+                  <option>Молодший слідчий</option>
+                  <option>Заступник начальника управління</option>
+                  <option>Начальник Управління</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="form-section__title">
+              <h4>Вкажіть ОВД:</h4>
+            </div>
+            <div class="form-section__content">
+              <div class="form-section__content">
+                <div class="form-group">
+                  <label for="ovd">Прізвище</label>
+                  <select class="form-control selectpicker" id="ovd">
+                    <option>Залізничний</option>
+                    <option>Франківський</option>
+                    <option>Личаківський</option>
+                    <option>Сихівський</option>
+                    <option>Галицький</option>
+                    <option>Шевченківський</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="form-section__title">
+              <h4>Дата</h4>
+            </div>
+            <div class="form-section__content">
+              <div class="form-section__content">
+                <div class="form-group">
+                  <label for="StartDate">Оберіть дату початку слідства</label>
+                  <input id="StartDate" type="date"/>
+                </div>
+                <div class="form-group">
+                  <label for="endDate">ОБеріть дату закінчення слідства</label>
+                  <input id="endDate" type="date"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="form-section__title">
+              <h4>Кваліфікація</h4>
+            </div>
+            <div class="form-section__content">
+              <div class="form-section__content">
+                <div class="form-group">
+                  <label for="classification">Звання</label>
+                  <select class="form-control selectpicker" id="classification">
+                    <option>Вбивство</option>
+                    <option>Крадіжка</option>
+                    <option>Розбій</option>
+                    <option>Хліганство</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="form-section__title">
+              <h4>Кількість:</h4>
+            </div>
+            <div class="form-section__content">
+              <div class="form-section__content">
+                <div class="form-group">
+                  <label for="qty">Обвинувачених:</label>
+                  <select class="form-control selectpicker" id="qty">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="qtyEpizod">Епізодів:</label>
+                  <select class="form-control selectpicker" id="qtyEpizod">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="form-section__title">
+              <h4>Рішення</h4>
+            </div>
+            <div class="form-section__content">
+              <div class="form-section__content">
+                <div class="form-group">
+                  <label for="confirm">Оберіть дату прийняття</label>
+                  <input id="confirm" type="date"/>
+                </div>
+                <div class="form-group">
+                  <label for="face">Особа що прийняла рішення:</label>
+                  <select class="form-control selectpicker" id="face">
+                    <option>Залізничний</option>
+                    <option>Франківський</option>
+                    <option>Личаківський</option>
+                    <option>Сихівський</option>
+                    <option>Галицький</option>
+                    <option>Шевченківський</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-section__content">
+            <div class="form-group decision-group">
+              <label for="decision">Прийняте рішення</label>
+              <textarea class="decision" id="decision"></textarea>
+            </div>
+          </div>
+          <button class="btn btn-default" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>

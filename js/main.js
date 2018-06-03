@@ -6,6 +6,5 @@ $(document).ready(function(){
         style: 'btn-info',
         size: 8
     });
-
 });
 
