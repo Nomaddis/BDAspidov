@@ -450,9 +450,6 @@ header {
   font-weight: 600;
   font-size: 18px;
 }
-/*
-*  ABOUT US BLOCK
-*/
 main {
   background-color: #252a36;
   padding: 20px 0px 50px 0px;
@@ -489,6 +486,9 @@ main {
 }
 .table tr:hover {
   background-color: #439c92;
+}
+.edit {
+  margin-bottom: 10px;
 }
 .log-page {
   width: 100%;
